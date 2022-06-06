@@ -115,7 +115,7 @@
     </div>
   </div>
 
-    <!-- Task2 -->
+    <!-- Task2 test-->
 
   <div class="container px-4 py-5" id="hanging-icons">
     <h2 class="pb-2 border-bottom">Task 2</h2>
