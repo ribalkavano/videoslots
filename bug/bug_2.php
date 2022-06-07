@@ -41,5 +41,8 @@
             <span class="fw-bold">Actual Result: </span> "The /registration.php?step=1 request is failed with Code Status: 405. An infinite preloader is displayed"
           <br>
             <span class="fw-bold">Expected Result: </span> "Registration step 2" is opened
+            <br>
+            <br>
+            <span class="fw-bold">Attachments: </span> <a href="https://drive.google.com/file/d/1NnE29gam-9qI_2vVZ6lJWdA_uf0GITrz/view?usp=sharing">bug_002.mp4</a>
   
 </div>

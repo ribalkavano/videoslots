@@ -40,4 +40,7 @@
             <span class="fw-bold">Actual Result: </span> "Too many attempts..." error message is displayed in the "Phone number" input field
           <br>
             <span class="fw-bold">Expected Result: </span> Entered phone number is displayed in the "Phone number" input field
+            <br>
+            <br>
+            <span class="fw-bold">Attachments: </span> <a href="https://drive.google.com/file/d/1tca6-oUym8xsaEBMGkypXDKgIcTcEb5Q/view?usp=sharing">bug_001.mp4</a>
 </div>

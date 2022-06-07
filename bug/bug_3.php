@@ -13,9 +13,9 @@
           <span class="fw-bold">Status: </span>   <span class="badge bg-primary">Open</span>
         <br>
         <br>
-          <span class="fw-bold">Summary: </span> [Registration] - An error message is displayed in "Phone number" input field when changing focus to other elements 
+          <span class="fw-bold">Summary: </span> [Registration] - The "Registration" modal window is displayed in the new tab when opening "Privacy Policy"  
         <br>
-          <span class="fw-bold">Description: </span>   "Too many attempts..." error message is displayed in the "Phone number" input field when changing focus to other elements after typing a number
+          <span class="fw-bold">Description: </span>   The "Registration" modal window is displayed in full-screen and can't be closed when opening "Privacy Policy" link in new tab 
         <br>
 
           <div class="row mb-3">
@@ -38,4 +38,7 @@
             <span class="fw-bold">Actual Result: </span> The "Registration" modal window, which can not be closed, is displayed in a new tab in full screen mode
           <br>
             <span class="fw-bold">Expected Result: </span> A new tab is opened with "Privacy Policy" information 
+            <br>
+            <br>
+            <span class="fw-bold">Attachments: </span> <a href="https://drive.google.com/file/d/17mckX753m6fkMcQvTsGwcGjW1MygpUOp/view?usp=sharing">bug_003.mp4</a>
 </div>
