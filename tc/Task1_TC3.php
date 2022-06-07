@@ -1,6 +1,14 @@
 <div>
-    <h2>Featured title</h2>
-          <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+        <span class="fw-bold">Summary: </span> Verify validation by not numeric symbols for "Array" input field
+        <br>
+          <span class="fw-bold">Priority: </span> High
+        <br>
+          <span class="fw-bold">Reporter: </span> Ivan Rybalka
+        <br>
+          <span class="fw-bold">Status: </span>   <span class="badge bg-danger">FAIL</span>
+        <br>
+          <span class="fw-bold">Pre-Condition:</span>
+          <p>The "Multipliers" app is enabled</p>
           <div class="row text-center">
             <div class="col-md-4 themed-grid-col">
                 <h5>Test Steps</h5>
@@ -12,21 +20,75 @@
                 <h5>Expected result</h5>
             </div>
           </div>
-          <div class="row">
+          <div class="row mb-3">
             <div class="col-md-4 themed-grid-col">
                 <div class="h-100 p-3 bg-light border rounded-3">
-                    <p>Or, keep it light and add a border for some added definition to the boundaries of your content.</p>
+                    <p>1. Enter the array with special symbols, spaces and letters in the "Array" input field</p>
                 </div>
             </div>
             <div class="col-md-4 themed-grid-col">
                 <div class="h-100 p-3 bg-light border rounded-3">
-                    <p>Or, keep it ed definition to the boundaries of your content.</p>
+                    <p>@,!,ax,Ps, ,+,_,)(,*&</p>
                 </div>
             </div>
             <div class="col-md-4 themed-grid-col">
                 <div class="h-100 p-3 bg-light border rounded-3">
-                    <p>Or, keep it light and add a border for some added definition to the boundaries of your content.</p>
+                    <p></p>
                 </div>
             </div>
           </div>
+          <div class="row mb-3">
+            <div class="col-md-4 themed-grid-col">
+                <div class="h-100 p-3 bg-light border rounded-3">
+                    <p>2. Click on the 'Calculate' button</p>
+                </div>
+            </div>
+            <div class="col-md-4 themed-grid-col">
+                <div class="h-100 p-3 bg-light border rounded-3">
+                    <p></p>
+                </div>
+            </div>
+            <div class="col-md-4 themed-grid-col">
+                <div class="h-100 p-3 bg-light border rounded-3">
+                    <p>Validation message "Only numeric values" is displayed</p>
+                </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-4 themed-grid-col">
+                <div class="h-100 p-3 bg-light border rounded-3">
+                    <p>3. Enter the array with numeric and special symbols in the "Array" input field</p>
+                </div>
+            </div>
+            <div class="col-md-4 themed-grid-col">
+                <div class="h-100 p-3 bg-light border rounded-3">
+                    <p>2,3,5,&,4,%,-,7</p>
+                </div>
+            </div>
+            <div class="col-md-4 themed-grid-col">
+                <div class="h-100 p-3 bg-light border rounded-3">
+                    <p></p>
+                </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-4 themed-grid-col">
+                <div class="h-100 p-3 bg-light border rounded-3">
+                    <p>4. Click on the 'Calculate' button</p>
+                </div>
+            </div>
+            <div class="col-md-4 themed-grid-col">
+                <div class="h-100 p-3 bg-light border rounded-3">
+                    <p></p>
+                </div>
+            </div>
+            <div class="col-md-4 themed-grid-col">
+                <div class="h-100 p-3 bg-light border rounded-3">
+                    <p>Validation message "Only numeric values" is displayed</p>
+                </div>
+            </div>
+          </div>
+          
+          <span class="fw-bold">Post-Condition:</span>
+          <p>Click on the "Clear" button</p>
 </div>
