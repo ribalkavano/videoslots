@@ -1,44 +1,57 @@
 <?php
-    $array_pal = htmlspecialchars(trim($_POST['arrayPal']));
+    session_start();
 
-// function Palindrome($str) {
-//   $l = 0;
-//   $r = strlen($str) - 1;
-//   $flag = 0;
+    // redirect to index.php
+    function redirect() {
+        header('Location: index.php');
+        exit;
+    }
 
-//   while($r > $l){
-//     if ($str[$l] != $str[$r]){
-//       $flag = 1;
-//       break;
-//     }
-//     $l++;
-//     $r--;
-//   }
+    $input_pal = htmlspecialchars(trim($_POST['arrayPal']));
 
-//   if ($flag == 0){
-//     echo $str." is a Palindrome string.\n";
-//   } else {
-//     echo $str." is not a Palindrome string.\n";
-//   }
-// }
+    $_SESSION['arrayPal'] = $input_pal;
 
-// Palindrome("radar");
-// Palindrome("rubber");
-// Palindrome("malayalam");
-// ?>
+    function cleanStr($string) {
+        $string = str_replace(' ', '', $string); // Replaces all spaces with hyphens.
+     
+        return preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
+     }
 
-//=== PHP strrev() function ===//
+     $pureStr = strtolower(cleanStr($input_pal)); // to lowercase
 
-<?php
-function Palindrome($str) {
-  $revString = strrev($str);
-  if ($revString == $str){
-    echo $str." is a Palindrome string.\n";
-  } else {
-    echo $str." is not a Palindrome string.\n";
-  }
-}
+    // PHP strrev() function 
+    function Palindrome($str) {
+        $revString = strrev($str);
+        $resStr = '';
 
-Palindrome($array_pal);
+        if ($revString == $str){
+            $resStr = " IS a Palindrome string.";
+        } else {
+            $resStr = " is NOT a Palindrome string.";
+        }
+        return $resStr;
+    }
+
+    $_SESSION["resultPal"] = "\"" . $input_pal . "\"" . Palindrome($pureStr);
+
+    // buttons 
+    if(isset($_POST['calculatePal'])) { 
+        calculateBtn(); 
+    } else if(isset($_POST['clearPal'])) {
+        clearBtn();
+    }
+
+    function calculateBtn() {
+        $_SESSION["resultPal"];
+        redirect();
+        exit;
+    }
+
+    function clearBtn() {
+        $_SESSION['resultPal'] = '';
+        $_SESSION['arrayPal'] = '';
+        redirect();
+        exit;
+    }
 
 ?>

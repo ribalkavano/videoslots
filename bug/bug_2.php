@@ -6,6 +6,10 @@
         <br>
           <span class="fw-bold">Reporter: </span> Ivan Rybalka
         <br>
+          <span class="fw-bold">Assigned to: </span> Ivan Rybalka
+        <br>
+          <span class="fw-bold">Fix Version: </span> v1.01
+        <br>
           <span class="fw-bold">Status: </span>   <span class="badge bg-primary">Open</span>
         <br>
         <br>

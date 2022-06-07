@@ -30,17 +30,17 @@
                 <form action="task1_option1.php" name="option1" method="post">
                     <div class="mb-3">
                         <label for="Task1Option1" class="form-label">Enter the Array</label>
-                        <input type="text" name="arrayOption1" class="form-control" id="Task1Option1" placeholder="1,2,3,4,5,6,7">
+                        <input type="text" name="arrayOption1" class="form-control" id="Task1Option1" placeholder="1,2,3,4,5,6,7" value="<?=$_SESSION["arrayOption1"]?>">
                     </div>
                     <div class="mb-3">
                         <div class="col-md themed-grid-col">
                             <div class="h-100 p-3 bg-light border rounded-3">
-                                <p>Output</p>
+                                <p><?=$_SESSION["result_option1"]?></p>
                             </div>
                         </div>
                     </div>
-                    <button type="submit" name="calculate" class="btn btn-primary">Calculate</button>
-                    <button type="submit" name="clear" class="btn btn-outline-primary">Clear</button>
+                    <button type="submit" name="calculate1" class="btn btn-primary">Calculate</button>
+                    <button type="submit" name="clear1" class="btn btn-outline-primary">Clear</button>
                 </form>
             </div>
             <br>
@@ -49,25 +49,21 @@
                 <form action="task1_option2.php" name="option2" method="post">
                     <div class="row mb-3">
                         <div class="col-md-8">
-                            <input type="text" name="arrayOption2" class="form-control" value="<?=$_SESSION['arrayOption2']?>" placeholder="1,2,3,4,5,6,7">
-                            <!--<input type="text" name="arrayOption2" class="form-control" value="" placeholder="1,2,3,4,5,6,7">-->
-
+                            <input type="text" name="arrayOption2" class="form-control"  placeholder="1,2,3,4,5,6,7" value="<?=$_SESSION['arrayOption2']?>">                       
                         </div>
                         <div class="col-md-4">
-                            <input type="text" name="valueOption2" class="form-control" value="<?=$_SESSION['valueOption2']?>" placeholder="Enter 4 or 6">
-                            <!--<input type="text" name="valueOption2" class="form-control" value="" placeholder="Value">-->
-
+                            <input type="text" name="valueOption2" class="form-control"  placeholder="Enter 4 or 6" value="<?=$_SESSION['valueOption2']?>">
                         </div>
                     </div>
                     <div class="mb-3">
                         <div class="col-md themed-grid-col">
                             <div class="h-100 p-3 bg-light border rounded-3">
-                                <p><?=$_SESSION['result']?></p>
+                                <p><?=$_SESSION['result_option2']?></p>
                             </div>
                         </div>
                     </div>
-                    <button type="submit" name="calculate" class="btn btn-primary">Calculate</button>
-                    <button type="submit" name="clear" class="btn btn-outline-primary">Clear</button>
+                    <button type="submit" name="calculate2" class="btn btn-primary">Calculate</button>
+                    <button type="submit" name="clear2" class="btn btn-outline-primary">Clear</button>
                     
                 </form>
             </div>
@@ -135,17 +131,17 @@
             <form action="task2.php" name="task2" method="post">
                 <div class="mb-3">
                     <label for="formTask2" class="form-label">Enter the String</label>
-                    <input type="text" class="form-control" name="arrayPal" id="formGroupExampleInput" placeholder="radar">
+                    <input type="text" class="form-control" name="arrayPal" id="formGroupExampleInput" placeholder="radar" value="<?=$_SESSION['arrayPal']?>">
                 </div>
                 <div class="mb-3">
                     <div class="col-md themed-grid-col">
                         <div class="h-100 p-3 bg-light border rounded-3">
-                            <p>Output</p>
+                            <p><?=$_SESSION['resultPal']?></p>
                         </div>
                     </div>
                 </div>
-                <button type="submit" name="calculate" class="btn btn-primary">Calculate</button>
-                <button type="submit" name="clear" class="btn btn-outline-primary">Clear</button>
+                <button type="submit" name="calculatePal" class="btn btn-primary">Calculate</button>
+                <button type="submit" name="clearPal" class="btn btn-outline-primary">Clear</button>
             </form>
             </div>
     
