@@ -60,4 +60,11 @@
           <br>
           <span class="fw-bold">Post-Condition:</span>
           <p>Click on the "Clear" button</p>
+          
+          <!-- "GIVEN the ""Multipliers"" app is enabled
+                WHEN user enters the array of positive integers in the ""Array"" input field
+                AND clicks on the 'Calculate' button
+                THEN number of multimliers are calculated for: 
+                - '4' = 2;
+                - '6' = 3" -->
 </div>
